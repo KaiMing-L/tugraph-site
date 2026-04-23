@@ -9,131 +9,80 @@ export default defineConfig({
   favicon:
     'https://gw.alipayobjects.com/zos/bmw-prod/6290edfc-e134-4074-a550-079eeba9926d.svg',
   routes: [
-    // { path: '/', component: '@/pages/index' },
-    // { path: '/product', component: '@/pages/product', title: 'product.title' },
-    // {
-    //   path: '/learn',
-    //   component: '@/pages/product_learn',
-    //   title: 'product.title',
-    // },
-    // {
-    //   path: '/analytics',
-    //   component: '@/pages/product_analytics',
-    //   title: 'product.title',
-    // },
-    // { path: '/case', component: '@/pages/case', title: 'case.title' },
-    // {
-    //   path: '/ecosystem',
-    //   component: '@/pages/ecosystem',
-    //   title: 'ecosystem.title',
-    // },
-    // { path: '/doc', component: '@/pages/doc', title: 'doc.title' },
-    // { path: '/blog', component: '@/pages/blog', title: 'blog.title' },
-    // {
-    //   path: '/download',
-    //   component: '@/pages/download',
-    //   title: 'download.title',
-    // },
-    // {
-    //   path: '/overview',
-    //   component: '@/pages/overview',
-    //   title: 'product.title',
-    // },
-    // {
-    //   path: '/platform',
-    //   component: '@/pages/platform',
-    //   title: 'platform.title',
-    // },
-    // {
-    //   path: '/db',
-    //   component: '@/pages/platform',
-    //   title: 'db.title',
-    // },
-    // {
-    //   path: '/docs/*',
-    //   component: '@/pages/docs',
-    //   title: 'docs.title',
-    // },
-    // {
-    //   path: '/docs',
-    //   component: '@/pages/docs',
-    //   title: 'docs.title',
-    // },
-    // new pages
     {
       path: '/',
-      component: '@/pages/new-pages/Home',
+      component: '@/pages/Home',
     },
     {
       path: '/product',
-      component: '@/pages/new-pages/Product',
+      component: '@/pages/Product',
       title: 'product.title',
     },
     {
       path: '/product/*',
-      component: '@/pages/new-pages/Product',
+      component: '@/pages/Product',
       title: 'product.title',
     },
     {
       path: '/case',
-      component: '@/pages/new-pages/Case',
+      component: '@/pages/Case',
       title: 'case.title',
     },
     {
       path: '/partners',
-      component: '@/pages/new-pages/Partners',
+      component: '@/pages/Partners',
     },
     {
       path: '/docs',
-      component: '@/pages/new-pages/Docs',
+      component: '@/pages/Docs',
       title: 'docs.title',
     },
     {
       path: '/docs/*',
-      component: '@/pages/new-pages/Docs',
+      component: '@/pages/Docs',
       title: 'docs.title',
     },
     {
       path: '/download',
-      component: '@/pages/new-pages/Download',
+      component: '@/pages/Download',
       title: 'download.title',
     },
     {
       path: '/blog/list',
-      component: '@/pages/new-pages/Blog/list',
+      component: '@/pages/Blog/list',
       title: 'blog.title',
     },
     {
       path: '/blog/info/*',
-      component: '@/pages/new-pages/Blog/info',
+      component: '@/pages/Blog/info',
     },
     {
       path: '/blog/info',
-      component: '@/pages/new-pages/Blog/info',
+      component: '@/pages/Blog/info',
     },
     {
       path: '/activity/list',
-      component: '@/pages/new-pages/Activity/list',
+      component: '@/pages/Activity/list',
     },
     {
       path: '/activity/info',
-      component: '@/pages/new-pages/Activity/info',
+      component: '@/pages/Activity/info',
     },
     {
       path: '/activity/info/*',
-      component: '@/pages/new-pages/Activity/info',
+      component: '@/pages/Activity/info',
     },
     {
       path: '/video/home',
-      component: '@/pages/new-pages/Video/home',
+      component: '@/pages/Video/home',
     },
     {
       path: '/video/list',
-      component: '@/pages/new-pages/Video/list',
+      component: '@/pages/Video/list',
     },
     {
       path: '/video/info/*',
-      component: '@/pages/new-pages/Video/info',
+      component: '@/pages/Video/info',
     },
   ],
   scripts: [
