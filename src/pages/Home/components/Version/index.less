@@ -1,0 +1,74 @@
+.versionContainer {
+  padding: 96px 0;
+}
+
+.versionListWrapper {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  & > div:first-child {
+    z-index: 10;
+  }
+}
+
+.editionWrapper {
+  width: 570px;
+  height: 100%;
+  background: rgba(20, 20, 25, 0.6);
+  backdrop-filter: blur(16px);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border: 1px solid #ffffff1a;
+
+  .title {
+    font-size: 20px;
+    color: #fff;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .tag {
+    margin: 0 auto 16px;
+  }
+
+  .recommendationPointWrapper {
+    font-size: 14px;
+    color: #a1a1aa;
+    line-height: 22px;
+    text-align: justify;
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 17px;
+
+    &::before {
+      content: '';
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #d8d8d8;
+      position: absolute;
+      top: 10px;
+      left: 6px;
+    }
+  }
+
+  .recommendationPointWrapper:has(+ .btn) {
+    margin-bottom: 35px;
+  }
+}
+
+.btn {
+  margin-top: auto;
+}
+
+@media (max-width: 600px) {
+  .editionWrapper {
+    width: calc(100vw - 64px);
+  }
+}

@@ -1,0 +1,83 @@
+.activityCard {
+  width: 357px;
+  height: 328px;
+  background: rgba(20, 20, 25, 0.65);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  cursor: pointer;
+
+  .activityImg {
+    width: 100%;
+    height: 200px;
+    border-radius: 16px 16px 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .activityInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+
+    .activityTitle {
+      display: flex;
+      gap: 8px;
+
+      .title {
+        width: 0;
+        flex: 1;
+        font-size: 16px;
+        color: #fff;
+        line-height: 24px;
+        font-weight: 600;
+        overflow: hidden;
+        /* 隐藏超出部分 */
+        text-overflow: ellipsis;
+        /* 显示省略号 */
+        display: -webkit-box;
+        /* 使用弹性盒模型 */
+        -webkit-box-orient: vertical;
+        /* 垂直方向 */
+        -webkit-line-clamp: 2;
+        /* 限制显示两行 */
+      }
+
+      .tag {
+        width: 48px;
+        height: 22px;
+        background: #f2f4f8;
+        border-radius: 4px;
+        font-size: 12px;
+        color: #545762;
+        line-height: 20px;
+        text-align: center;
+      }
+    }
+
+    .activityTime,
+    .activityLocation {
+      font-size: 12px;
+      color: #a1a1aa;
+      line-height: 22px;
+      overflow: hidden;
+      /* 隐藏超出部分 */
+      text-overflow: ellipsis;
+      /* 显示省略号 */
+      white-space: nowrap;
+      /* 防止换行 */
+    }
+
+    .btn {
+      height: 32px;
+      background: #f2f4f8;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 14px;
+      color: #292d3b;
+      line-height: 32px;
+    }
+  }
+}
